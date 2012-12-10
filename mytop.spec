@@ -6,14 +6,14 @@ Summary: A clone of top for MySQL 3.22.x to 4.x
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source: http://jeremy.zawodny.com/mysql/mytop/%{name}-%{version}.tar.bz2
+Source0: http://jeremy.zawodny.com/mysql/mytop/%{name}-%{version}.tar.bz2
 URL: http://jeremy.zawodny.com/mysql/mytop/
 License: GPL
 Group: Databases
 BuildArch:  noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Prefix: %{_prefix}
 BuildRequires: perl-Term-ReadKey
+BuildRequires: perl-devel
 Requires: perl-Term-ReadKey
 Obsoletes: perl-mytop
 
@@ -30,16 +30,10 @@ make
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
 # beware to use _std macros 
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %{_bindir}/mytop
 %{_mandir}/man1/%{name}.*
 %doc README
-

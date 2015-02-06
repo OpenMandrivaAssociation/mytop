@@ -1,6 +1,6 @@
 %define name mytop
 %define version 1.6 
-%define release %mkrel 5
+%define release 6
 
 Summary: A clone of top for MySQL 3.22.x to 4.x
 Name: %{name}

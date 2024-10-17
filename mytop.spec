@@ -7,7 +7,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://jeremy.zawodny.com/mysql/mytop/%{name}-%{version}.tar.bz2
-URL: http://jeremy.zawodny.com/mysql/mytop/
+URL: https://jeremy.zawodny.com/mysql/mytop/
 License: GPL
 Group: Databases
 BuildArch:  noarch

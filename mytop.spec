@@ -12,6 +12,7 @@ License: GPL
 Group: Databases
 BuildArch:  noarch
 Prefix: %{_prefix}
+BuildRequires:	make
 BuildRequires: perl-Term-ReadKey
 BuildRequires: perl-devel
 Requires: perl-Term-ReadKey
